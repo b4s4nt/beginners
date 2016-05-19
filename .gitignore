@@ -1,7 +1,1 @@
-out/
-*.swp
-tmp/
-*.iml
-project.properties
-.idea/
-target/
+/sorter/target/

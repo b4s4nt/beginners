@@ -18,7 +18,31 @@ public class Main {
   };
 
   public Main() {
-    // Write your code here
+
+    for (int j = 0; j < strings.length; j++) {
+      for (int i = j + 1; i < strings.length; i++) {
+        if (strings[i].compareTo(strings[j]) < 0) {
+          String temp = strings[j];
+          strings[j] = strings[i];
+          strings[i] = temp;
+         // System.out.println(strings[i]);
+        }
+       // System.out.println(strings[j]);
+
+
+      }
+
+
+      }
+    for (int k=0;k<strings.length;k++){
+      System.out.println(strings[k]);
+
+    }
+
+
+
+      // Write your code here
+
 
 
   }
