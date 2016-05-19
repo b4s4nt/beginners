@@ -15,12 +15,35 @@ public class Main {
     add(new Animal("carnivore", "panther", 4));
     add(new Animal("omnivore", "human", 2));
   }};
-
+;
   ArrayList<Animal> herbivores = new ArrayList<>();
   ArrayList<Animal> carnivores = new ArrayList<>();
   ArrayList<Animal> omnivores = new ArrayList<>();
 
   public Main() {
+    Iterator<Animal> i=originalList.iterator();
+    while (i.hasNext()) {
+      Animal obj=i.next();
+     // System.out.println(i.next().getType());
+
+      if(obj.getType().equalsIgnoreCase("herbivore")){
+        herbivores.add(obj);
+
+
+      } else if (obj.getType().equalsIgnoreCase("omnivore")){
+        omnivores.add(obj);
+
+
+      } else{
+        carnivores.add(obj);
+
+      }
+
+
+
+
+
+    }
     // Write your code here
 
 
