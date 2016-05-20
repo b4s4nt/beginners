@@ -8,5 +8,9 @@ public abstract class Animal {
     this.name = name;
     this.legs = legs;
   }
+
+  public String getName() {
+    return name;
+  }
 }
 

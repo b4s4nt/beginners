@@ -21,7 +21,28 @@ public class Main {
   ArrayList<Omnivore> omnivores = new ArrayList<>();
 
   public Main() {
-    // Write your code here
+    Iterator<Animal> i= originalList.iterator();
+    while(i.hasNext()){
+      Animal  obj=i.next();
+
+      if( obj instanceof Herbivore ){
+        herbivores.add((Herbivore)obj);
+      }else if(obj instanceof Carnivore){
+        carnivores.add((Carnivore)obj);
+      }else if(obj instanceof Omnivore){
+        omnivores.add((Omnivore)obj);
+      }else{
+        System.out.println("Error");
+      }
+
+
+
+    }
+
+    System.out.print(carnivores.get(0).getName());// this will print name which in inside the first object
+    System.out.print(herbivores.size());// this will give the size of object
+    System.out.print(omnivores.size());
+
 
 
   }
